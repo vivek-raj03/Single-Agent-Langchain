@@ -1,0 +1,30 @@
+[project]
+name = "single-agent-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vivek-raj03", email = "vivekraj03023@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "duckduckgo-search>=8.1.1",
+    "ipykernel>=7.4.0",
+    "langchain>=1.5.2",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.8.4",
+    "langchain-google-genai>=4.5.2",
+    "langchain-openai>=1.8.5",
+    "langchain-tavily>=0.2.18",
+    "langchainhub>=0.1.21",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+single-agent-langchain = "single_agent_langchain:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
